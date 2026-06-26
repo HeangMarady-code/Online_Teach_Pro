@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Kantumruy Pro',sans-serif;
+    line-height:1.6;
+    background:#f4f4f4;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.navbar{
+    background:#0f172a;
+    color:white;
+    padding:15px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:20px;
+    text-align: center;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    background:linear-gradient(
+    135deg,#1e3a8a,#2563eb);
+    color:white;
+    padding:100px 0;
+}
+
+.hero-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero-image{
+    font-size:180px;
+}
+
+.btn{
+    display:inline-block;
+    background:#f59e0b;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    margin-top:20px;
+    border-radius:5px;
+}
+
+.about,
+.courses,
+.teachers,
+.events,
+.contact{
+    padding:80px 0;
+}
+
+.about h2,
+.courses h2,
+.teachers h2,
+.events h2,
+.contact h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.course-grid,
+.teacher-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card,
+.teacher-card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.card i{
+    font-size:50px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.card span{
+    display:block;
+    margin-top:15px;
+    color:green;
+    font-weight:bold;
+}
+
+.teacher-card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.event-box{
+    background:white;
+    padding:20px;
+    margin-bottom:15px;
+    border-left:5px solid #2563eb;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+}
+
+form button{
+    width:100%;
+    padding:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:40px 0;
+}
+
+@media(max-width:768px){
+
+.hero-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-image{
+    margin-top:30px;
+    font-size:120px;
+}
+
+.nav-container{
+    flex-direction:column;
+}
+
+.nav-links{
+    flex-direction:column;
+    margin-top:15px;
+}
+
+.nav-links li{
+    margin:10px 0;
+}
+
+}
